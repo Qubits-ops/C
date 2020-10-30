@@ -215,12 +215,17 @@ int racx(int nb1){
 }
 int quadratique(int nb1,int coefficient){
     int resultat;
-    resultat = nb1 * puissance(coefficient,2);
+    resultat = coefficient * puissance(nb1,2);
     printf("%d\n",resultat);
 }
-int quadratique_double(int nb1,int nb2,int coefficient,int coefficient2,int coefficient3){
+int quadratique_double(int nb1,int nb2,int nb3,int coefficient,int coefficient2,int coefficient3){
     int resultat;
-    resultat = nb1 * puissance(coefficient,2) + coefficient2 * nb1 * nb2 + coefficient3 * puissance(nb2);
+    resultat = coefficient1 * puissance(nb1,2) + coefficient2 * nb2 * nb3 +  coefficient3* puissance(nb3,2);
+    printf("%d\n",resultat);
+}
+int quadratique_triple(int nb1,int nb2,int nb3,int coefficient1,int coefficient2,int coefficient3,int coefficient4,int coefficient5,int coefficient6){
+    int resultat;
+    resultat = coefficient1 * puissance(nb1,2) + coefficient2 * puissance(nb2,2) + coefficient3 * puissance(nb3,2) + coefficient4 * nb1 + nb2 + coefficient5 * nb1 * nb3 + coefficient6 * nb2 * nb3;
     printf("%d\n",resultat);
 }
 int fibo(int n){
