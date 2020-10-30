@@ -218,6 +218,11 @@ int quadratique(int nb1,int coefficient){
     resultat = nb1 * puissance(coefficient,2);
     printf("%d\n",resultat);
 }
+int quadratique_double(int nb1,int nb2,int coefficient,int coefficient2,int coefficient3){
+    int resultat;
+    resultat = nb1 * puissance(coefficient,2) + coefficient2 * nb1 * nb2 + coefficient3 * puissance(nb2);
+    printf("%d\n",resultat);
+}
 int fibo(int n){
     /*En developpement*/
     int pre,cou,i,sui;
