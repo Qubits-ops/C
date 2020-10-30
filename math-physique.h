@@ -228,7 +228,11 @@ int quadratique_triple(int nb1,int nb2,int nb3,int coefficient1,int coefficient2
     resultat = coefficient1 * puissance(nb1,2) + coefficient2 * puissance(nb2,2) + coefficient3 * puissance(nb3,2) + coefficient4 * nb1 + nb2 + coefficient5 * nb1 * nb3 + coefficient6 * nb2 * nb3;
     printf("%d\n",resultat);
 }
+int vtls(){
+    int vitesse = 299792458;
+    return vitesse;
 
+}
 int fibo(int n){
     /*En developpement*/
     int pre,cou,i,sui;
