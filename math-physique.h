@@ -193,6 +193,19 @@ int volume_sphere(int rayon){
     printf("%d\n",resultat);
 
 }
+int directement_proportionnel(int k,int x){
+    int y;
+    y = k * x;
+    k = y / x;
+    printf("%d\n",k);
+
+}
+int inversement_proportionnelle(int k,int x){
+    int y;
+    y = k / x;
+    k = y * x;
+    printf("%d\n",k);
+}
 int fibo(int n){
     /*En developpement*/
     int pre,cou,i,sui;
