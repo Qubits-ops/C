@@ -19,7 +19,7 @@ int puissance(int m,int pui){
         a*=m;
         pui--;
     }
-    printf("%d\n",a);
+    return a;
 
 }
 float conversion_fahr_celsius(int fahr){
@@ -110,6 +110,65 @@ float pi(int nb1){
     float pi = 3.14159265359;
     resultat = nb1 * pi;
     printf("%f\n",resultat);
+}
+int aire_carre(int c){
+    int resultat;
+    resultat = puissance(c,2);
+    printf("%d\n",resultat);
+}
+int aire_rectangle(int longueur,int largeur){
+    int resultat;
+    resultat = longueur * largeur;
+    printf("%d\n",resultat);
+}
+int aire_triangle(int base,int hauteur){
+    int resultat;
+    resultat = (base * hauteur) / 2;
+    printf("%d\n",resultat);
+}
+int aire_losange(int grande_diagonale,int petite_diagonale){
+    int resultat;
+    resultat = (grande_diagonale * petite_diagonale) / 2;
+    printf("%d\n",resultat);
+
+}
+int aire_trapeze(int grande_base,int petite_base,int hauteur){
+    int resultat;
+    resultat = (grande_base + petite_base) / 2 * hauteur;
+    printf("%d\n",resultat);
+
+}
+int aire_polygone_regulier(int perimetre,int apotheme){
+    int resultat;
+    resultat = (perimetre / 2) * apotheme;
+    printf("%d\n",resultat);
+}
+int aire_cercle(int rayon,int perimetre){
+    int resultat;
+    resultat = pi(puissance(rayon,2));
+    printf("%d\n",resultat);
+}
+int aire_laterale_cone(int rayon,int generatrice){
+    int resultat;
+    resultat = pi(rayon) * generatrice;
+    printf("%d\n",resultat);
+}
+int aire_surface_sphere(int rayon){
+    int resultat;
+    resultat = 4 * pi(puissance(rayon,2));
+    printf("%d\n",resultat);
+
+}
+
+int volume_cube(int cote){
+    int resultat;
+    resultat = puissance(cote,3);
+    printf("%d\n",resultat);
+}
+int volume_parallelepipede(int longueur,int largeur,int hauteur){
+    int resultat;
+    resultat = longueur * largeur * hauteur;
+    printf("%d\n",resultat);
 }
 int fibo(int n){
     /*En developpement*/
