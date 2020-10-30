@@ -200,11 +200,23 @@ int directement_proportionnel(int k,int x){
     printf("%d\n",k);
 
 }
-int inversement_proportionnelle(int k,int x){
+int inversement_proportionnel(int k,int x){
     int y;
     y = k / x;
     k = y * x;
     printf("%d\n",k);
+}
+int racx(int nb1){
+    int resultat;
+    resultat = nb1 * nb1;
+    printf("%d\n",resultat);
+
+
+}
+int quadratique(int nb1,int coefficient){
+    int resultat;
+    resultat = nb1 * puissance(coefficient,2);
+    printf("%d\n",resultat);
 }
 int fibo(int n){
     /*En developpement*/
