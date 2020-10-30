@@ -234,7 +234,6 @@ int vtls(){
 
 }
 int fibo(int n){
-    /*En developpement*/
     int pre,cou,i,sui;
     if(n < 2){
         printf("%d\n",n);
@@ -254,5 +253,6 @@ int fibo(int n){
     }
 
 }
+
 
 #endif // MATH-PHYSIQUE_H_INCLUDED
