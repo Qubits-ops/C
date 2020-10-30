@@ -13,13 +13,13 @@ int table_puissance(int m,int n){
 
 }
 int puissance(int m,int pui){
-    int a=1;
+    int p=1;
 
     while(pui>=1) {
-        a*=m;
+        p*=m;
         pui--;
     }
-    return a;
+    return p;
 
 }
 float conversion_fahr_celsius(int fahr){
