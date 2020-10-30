@@ -170,6 +170,29 @@ int volume_parallelepipede(int longueur,int largeur,int hauteur){
     resultat = longueur * largeur * hauteur;
     printf("%d\n",resultat);
 }
+int volume_prisme_regulier(int aire_base,int hauteur){
+    int resultat;
+    resultat = aire_base * hauteur;
+    printf("%d\n",resultat);
+}
+int volume_cylindre(int rayon_base,int hauteur){
+    int resultat;
+    resultat = pi(puissance(rayon_base,2)) * hauteur;
+    printf("%d\n",resultat);
+
+}
+int volume_cone(int aire_base,int hauteur){
+    int resultat;
+    resultat = ((1/3) * aire_base) * hauteur;
+    printf("%d\n",resultat);
+
+}
+int volume_sphere(int rayon){
+    int resultat;
+    resultat = ((4/3) * pi(puissance(rayon,3)));
+    printf("%d\n",resultat);
+
+}
 int fibo(int n){
     /*En developpement*/
     int pre,cou,i,sui;
