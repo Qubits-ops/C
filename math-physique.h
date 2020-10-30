@@ -104,6 +104,13 @@ int division(int nb1,int nb2){
 
 
 }
+
+float pi(int nb1){
+    float resultat;
+    float pi = 3.14159265359;
+    resultat = nb1 * pi;
+    printf("%f\n",resultat);
+}
 int fibo(int n){
     /*En developpement*/
     int pre,cou,i,sui;
@@ -112,13 +119,13 @@ int fibo(int n){
     }
     else{
         pre = 1;
-        cou = 1;
-        for(i=2;i< n;n-2){
-            sui = p + c;
-            p = c;
-            c = s;
+        cou = 2;
+        for(i=3;i<= n;i++){
+            sui = pre + cou;
+            pre = cou;
+            cou = sui;
         }
-        return c;
+        return cou;
     }
 
 }
