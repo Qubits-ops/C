@@ -237,15 +237,18 @@ int fibo(int n){
     /*En developpement*/
     int pre,cou,i,sui;
     if(n < 2){
+        printf("%d\n",n);
         return n;
+
     }
     else{
-        pre = 1;
-        cou = 2;
-        for(i=3;i<= n;i++){
+        pre = 0;
+        cou = 1;
+        for(i=2;i<= n;i++){
             sui = pre + cou;
             pre = cou;
             cou = sui;
+            printf("%d\n",cou);
         }
         return cou;
     }
