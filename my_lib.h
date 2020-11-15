@@ -14,7 +14,6 @@ int my_printf(const char *str){
         my_putchar(str[i]);
         i++;
     }
-    my_putchar('\0');
     return 0;
 }
 
