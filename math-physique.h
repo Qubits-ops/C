@@ -1,4 +1,6 @@
 /*by Qubit-Ops*/
+/*remplacer tous les printf() par return*/
+/*replace printf() with return*/
 #ifndef MATH-PHYSIQUE_H_INCLUDED
 #define MATH-PHYSIQUE_H_INCLUDED
 #include <stdio.h>
