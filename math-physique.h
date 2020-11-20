@@ -228,6 +228,21 @@ int quadratique_triple(int nb1,int nb2,int nb3,int coefficient1,int coefficient2
     resultat = coefficient1 * puissance(nb1,2) + coefficient2 * puissance(nb2,2) + coefficient3 * puissance(nb3,2) + coefficient4 * nb1 + nb2 + coefficient5 * nb1 * nb3 + coefficient6 * nb2 * nb3;
     printf("%d\n",resultat);
 }
+float quadratic_plus(a,b,c){
+    float root1;
+
+    root1 = (-b + sqrt(b*b - 4*a*c)) / (2*a);
+
+    return root1;
+}
+float quadratic_moins(a,b,c){
+    float root1;
+
+    root1 = (-b - sqrt(b*b - 4*a*c)) / (2*a);
+    return root1;
+
+}
+
 int vtls(){
     int vitesse = 299792458;
     return vitesse;
